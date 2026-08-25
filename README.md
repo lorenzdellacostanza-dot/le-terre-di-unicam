@@ -1,7 +1,12 @@
 ⭐ Le Terre di Unicam  RPG (matricola 125946)
 
 
-                          <img width="621" height="498" alt="{37CA97AB-38C2-43C6-9B7D-7C324855464B}" src="https://github.com/user-attachments/assets/886401e9-804d-4fc5-bf1f-0176835d7dbf" />
+ 
+ 
+ <img width="621" height="498" alt="{37CA97AB-38C2-43C6-9B7D-7C324855464B}" src="https://github.com/user-attachments/assets/886401e9-804d-4fc5-bf1f-0176835d7dbf" />
+
+
+
 
 
 Piccolo gioco di ruolo a turni con interfaccia grafica JavaFX, sviluppato per il corso di
