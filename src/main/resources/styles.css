@@ -1,0 +1,208 @@
+/*
+ * Foglio di stile dell'interfaccia. Tenere l'aspetto qui, separato dalla logica delle schermate,
+ * permette di modificare il tema senza toccare il codice Java.
+ */
+
+.root {
+    -fx-font-family: "System";
+}
+
+/* --- Sfondi delle schermate ------------------------------------------- */
+
+.screen-root {
+    -fx-background-color: linear-gradient(to bottom, #1b2140, #0e1020);
+}
+
+.combat-root {
+    -fx-background-color: linear-gradient(to bottom, #2a1c30, #130e1a);
+}
+
+/* --- Testi ------------------------------------------------------------- */
+
+.title {
+    -fx-text-fill: #ffd54f;
+    -fx-font-size: 34px;
+    -fx-font-weight: bold;
+}
+
+.subtitle {
+    -fx-text-fill: #c7cce0;
+    -fx-font-size: 15px;
+}
+
+.caption {
+    -fx-text-fill: #c7cce0;
+    -fx-font-size: 13px;
+}
+
+.hint {
+    -fx-text-fill: #aeb4cc;
+    -fx-font-size: 12px;
+}
+
+.panel-title {
+    -fx-text-fill: #ffd54f;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+}
+
+.game-over-title {
+    -fx-text-fill: #ff5252;
+    -fx-font-size: 40px;
+    -fx-font-weight: bold;
+}
+
+/* --- Pulsanti ---------------------------------------------------------- */
+
+.menu-button {
+    -fx-background-color: rgba(40,48,84,0.9);
+    -fx-text-fill: #f4f6ff;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 26 10 26;
+    -fx-background-radius: 8;
+    -fx-border-color: rgba(255,213,79,0.5);
+    -fx-border-radius: 8;
+    -fx-cursor: hand;
+}
+
+.menu-button:hover {
+    -fx-background-color: rgba(60,72,120,0.95);
+}
+
+.menu-button:disabled {
+    -fx-opacity: 0.45;
+}
+
+.control-button {
+    -fx-background-color: rgba(40,48,84,0.9);
+    -fx-text-fill: #f4f6ff;
+    -fx-font-weight: bold;
+    -fx-padding: 6 16 6 16;
+    -fx-background-radius: 6;
+    -fx-border-color: rgba(255,255,255,0.2);
+    -fx-border-radius: 6;
+    -fx-cursor: hand;
+}
+
+.control-button:hover {
+    -fx-background-color: rgba(60,72,120,0.95);
+}
+
+.combat-button {
+    -fx-background-color: rgba(72,48,96,0.95);
+    -fx-text-fill: #f4f6ff;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-padding: 10 0 10 0;
+    -fx-background-radius: 6;
+    -fx-border-color: rgba(255,213,79,0.4);
+    -fx-border-radius: 6;
+    -fx-cursor: hand;
+}
+
+.combat-button:hover {
+    -fx-background-color: rgba(96,64,128,0.98);
+}
+
+.combat-button:disabled {
+    -fx-opacity: 0.4;
+}
+
+/* --- Contenitori ------------------------------------------------------- */
+
+.control-bar {
+    -fx-background-color: rgba(14,16,32,0.92);
+}
+
+.panel {
+    -fx-background-color: rgba(20,24,40,0.85);
+    -fx-background-radius: 8;
+    -fx-border-color: rgba(255,255,255,0.2);
+    -fx-border-radius: 8;
+    -fx-padding: 10;
+}
+
+.message-label {
+    -fx-background-color: rgba(0,0,0,0.72);
+    -fx-text-fill: #ffd54f;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 6 14 6 14;
+    -fx-background-radius: 6;
+}
+
+/* --- Registro di combattimento ---------------------------------------- */
+
+.log-area {
+    -fx-font-size: 13px;
+}
+
+.log-area .content {
+    -fx-background-color: #14161f;
+}
+
+.log-area {
+    -fx-control-inner-background: #14161f;
+    -fx-text-fill: #e8ebf5;
+    -fx-highlight-fill: #3a3f5c;
+    -fx-background-radius: 6;
+    -fx-border-color: rgba(255,255,255,0.15);
+    -fx-border-radius: 6;
+}
+
+/* --- Barre di stato (PV/PM/PE) ---------------------------------------- */
+
+.progress-bar {
+    -fx-indeterminate-bar-length: 60;
+}
+
+.progress-bar > .track {
+    -fx-background-color: rgba(0,0,0,0.55);
+    -fx-background-radius: 5;
+}
+
+.hp-bar > .bar {
+    -fx-background-color: #e53935;
+    -fx-background-radius: 5;
+    -fx-padding: 5;
+}
+
+.mp-bar > .bar {
+    -fx-background-color: #1e88e5;
+    -fx-background-radius: 5;
+    -fx-padding: 5;
+}
+
+.xp-bar > .bar {
+    -fx-background-color: #fdd835;
+    -fx-background-radius: 5;
+    -fx-padding: 5;
+}
+
+/* --- Riquadro del dialogo con i PNG ----------------------------------- */
+
+.dialogue-box {
+    -fx-background-color: rgba(14,16,32,0.95);
+    -fx-background-radius: 10;
+    -fx-border-color: rgba(255,213,79,0.6);
+    -fx-border-radius: 10;
+    -fx-padding: 16;
+}
+
+.dialogue-text {
+    -fx-text-fill: #f4f6ff;
+    -fx-font-size: 15px;
+}
+
+.dialogue-speaker {
+    -fx-text-fill: #ffd54f;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+.enemy-name {
+    -fx-text-fill: #ff8a80;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}

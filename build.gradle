@@ -1,0 +1,44 @@
+/*
+ * Script di build del gioco.
+ *
+ * - Il plugin "application" fornisce il task ./gradlew run e sa avviare la classe main.
+ * - Il plugin javafxplugin (openjfx) scarica i moduli JavaFX corretti per il sistema operativo in
+ *   uso e li mette a disposizione della compilazione e dell'esecuzione.
+ * - La toolchain fissa Java 25: se non è presente, viene scaricato automaticamente (vedi
+ *   settings.gradle), in modo che il progetto compili e giri anche su una macchina "pulita".
+ */
+plugins {
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.1.0'
+}
+
+group = 'it.unicam.cs.mpgc'
+version = '1.0.0'
+
+repositories {
+    mavenCentral()
+}
+
+// Java 25: Gradle userà (o scaricherà) un JDK 25 per compilare ed eseguire.
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(25)
+    }
+}
+
+// JavaFX 25, solo il modulo dei controlli usato dall'interfaccia.
+javafx {
+    version = '25'
+    modules = ['javafx.controls']
+}
+
+dependencies {
+    // Serializzazione del salvataggio in JSON.
+    implementation 'com.google.code.gson:gson:2.11.0'
+}
+
+application {
+    // Classe di avvio: NON estende Application, per evitare l'errore
+    // "JavaFX runtime components are missing" quando si esegue dal classpath.
+    mainClass = 'it.unicam.cs.mpgc.rpg125946.ui.Avvio'
+}

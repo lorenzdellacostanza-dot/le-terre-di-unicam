@@ -1,0 +1,12 @@
+/*
+ * Impostazioni del progetto Gradle.
+ *
+ * Il plugin foojay-resolver-convention abilita il download automatico del JDK richiesto dalla
+ * toolchain (Java 25) quando non è già installato sulla macchina: così i comandi ./gradlew build
+ * e ./gradlew run funzionano "su qualunque macchina" senza configurazioni manuali.
+ */
+plugins {
+    id 'org.gradle.toolchains.foojay-resolver-convention' version '1.0.0'
+}
+
+rootProject.name = 'rpg125946'

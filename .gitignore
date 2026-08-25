@@ -1,0 +1,17 @@
+# Build di Gradle
+/.gradle/
+/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# File degli IDE
+/.idea/
+*.iml
+/.vscode/
+/bin/
+/out/
+
+# File di sistema
+.DS_Store
+
+# Compilati Java
+*.class
