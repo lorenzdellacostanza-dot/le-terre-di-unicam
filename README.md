@@ -11,7 +11,7 @@ riprendere la partita.
 
 - **Git** (per clonare il repository).
 - Una connessione a Internet alla **prima** esecuzione: Gradle scarica da solo la propria
-  distribuzione, le librerie e — se non è già presente — un **JDK 25**.
+  distribuzione, le librerie e  se non è già presente un **JDK 25**.
 
 Non è necessario installare manualmente né Gradle né Java: ci pensa il *Gradle Wrapper* incluso nel
 progetto, insieme al plugin che provvede automaticamente alla toolchain Java 25.
