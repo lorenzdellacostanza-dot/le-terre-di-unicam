@@ -81,4 +81,4 @@ meccanismi di estensione) si trova nella **Wiki** del repository GitHub.
 
 ## Autore
 
-Matricola **125946**  corso di Metodologie di Programmazione, Università di Camerino.
+Matricola **125946**  corso di MODELLAZIONE E GESTIONE DELLA CONOSCENZA, Università di Camerino.
