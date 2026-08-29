@@ -10,7 +10,7 @@
 
 
 Piccolo gioco di ruolo a turni con interfaccia grafica JavaFX, sviluppato per il corso di
-**Metodologie di Programmazione** (Università di Camerino, A.A. 2025/26).
+**MODELLAZIONE E GESTIONE DELLA CONOSCENZA** (Università di Camerino, A.A. 2025/26).
 
 Il giocatore esplora un villaggio visto dall'alto, dialoga con un personaggio non giocante,
 combatte slime e goblin a turni, raccoglie oro ed esperienza, sale di livello e può salvare e
